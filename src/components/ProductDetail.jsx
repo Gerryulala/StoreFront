@@ -9,7 +9,7 @@ export default function ProductDetail({ product, onClose, onUpdate }) {
   }
 
   const handleUpdate = async () => {
-    const res = await fetch(`https://storeback-o9pt.onrender.com//products/${form._id}`, {
+  const res = await fetch(`https://storeback-o9pt.onrender.com/products/${form._id}`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(form),
@@ -22,7 +22,7 @@ export default function ProductDetail({ product, onClose, onUpdate }) {
   }
 
   const handleDelete = async () => {
-    const res = await fetch(`https://storeback-o9pt.onrender.com//products/${form._id}`, {
+  const res = await fetch(`https://storeback-o9pt.onrender.com/products/${form._id}`, {
       method: 'DELETE',
     })
     if (res.ok) {
