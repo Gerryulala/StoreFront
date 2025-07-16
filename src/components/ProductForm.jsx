@@ -10,7 +10,7 @@ export default function ProductForm({ onCreate, onClose }) {
 
     const handleSubmit = async e => {
         e.preventDefault()
-        const res = await fetch('http://localhost:3000/products', {
+        const res = await fetch('https://storeback-o9pt.onrender.com/products', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(form),

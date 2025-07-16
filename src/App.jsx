@@ -12,7 +12,7 @@ export default function App() {
   const [isAddModalOpen, setIsAddModalOpen] = useState(false)
 
   const fetchProducts = () => {
-    fetch('http://localhost:3000/products')
+    fetch('https://storeback-o9pt.onrender.com/products')
       .then(res => res.json())
       .then(data => setProducts(data))
   }
